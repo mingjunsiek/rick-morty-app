@@ -8,12 +8,13 @@ class HomePageBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final characters = context.read<HomeProvider>().characters;
     return Padding(
       padding: const EdgeInsets.all(12.0),
       child: ListView.builder(
-          itemCount: context.read<HomeProvider>().characters.length,
+          itemCount: characters.length,
           itemBuilder: (_, index) {
-            final character = context.read<HomeProvider>().characters[index];
+            final character = characters[index];
             return CharacterCard(
               character: character,
             );
