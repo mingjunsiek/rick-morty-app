@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 
+import 'repositories/rick_morty_repository.dart';
+import 'util/get_it_util.dart';
+
 void main() {
+  setUpApiClient();
+  setUpRepositories();
+
   runApp(const MyApp());
 }
 
@@ -31,7 +37,14 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
-  void _incrementCounter() {
+  void _incrementCounter() async {
+    final result = await getIt<RickMortyRepository>().fetchCharacters();
+
+    result.fold(
+      (error) {},
+      (response) {},
+    );
+
     setState(() {
       _counter++;
     });
