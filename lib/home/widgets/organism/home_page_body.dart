@@ -16,6 +16,7 @@ class HomePageBody extends StatelessWidget {
           itemBuilder: (_, index) {
             final character = characters[index];
             return CharacterCard(
+              key: Key('character-card-${character.id}'),
               character: character,
             );
           }),
