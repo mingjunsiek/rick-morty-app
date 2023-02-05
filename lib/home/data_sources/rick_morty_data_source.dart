@@ -1,8 +1,7 @@
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
-
-import '../../models/character.dart';
-import '../../util/dio_util.dart';
+import 'package:rick_morty_app/common/models/character.dart';
+import 'package:rick_morty_app/util/dio_util.dart';
 
 class RickMortyDataSource {
   const RickMortyDataSource();

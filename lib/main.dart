@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'home/repositories/rick_morty_repository.dart';
-import 'util/get_it_util.dart';
+import 'package:rick_morty_app/home/repositories/rick_morty_repository.dart';
+import 'package:rick_morty_app/util/get_it_util.dart';
 
 void main() {
   setUpApiClient();
