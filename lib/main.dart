@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'repositories/rick_morty_repository.dart';
+import 'home/repositories/rick_morty_repository.dart';
 import 'util/get_it_util.dart';
 
 void main() {
