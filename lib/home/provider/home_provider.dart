@@ -21,7 +21,6 @@ class HomeProvider with ChangeNotifier {
 
   void fetchCharacters() async {
     final result = await repository.fetchCharacters();
-    await Future.delayed(const Duration(seconds: 3));
     result.fold(
       (error) {
         pageState = PageState.hasError;
