@@ -1,8 +1,8 @@
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
-import 'package:rick_morty_app/util/get_it_util.dart';
 
 import 'api_client.dart';
+import 'get_it_util.dart';
 
 typedef DioCall = Future<Response<dynamic>> Function(Dio dio);
 typedef ToExpectedResult<T> = T Function(Response<dynamic> response);
