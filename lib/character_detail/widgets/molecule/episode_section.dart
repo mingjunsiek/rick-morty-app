@@ -18,9 +18,11 @@ class EpisodeSection extends StatelessWidget {
           style: Theme.of(context).textTheme.titleLarge,
         ),
         ...character.episode
-            .map((episode) => Text(
-                  episode,
-                ))
+            .map(
+              (episode) => Text(
+                episode,
+              ),
+            )
             .toList(),
       ],
     );
